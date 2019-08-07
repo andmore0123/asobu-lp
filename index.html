@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- <link rel="stylesheet" href="plugins/icon-awesome/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="plugins/hs-admin-icons/hs-admin-icons.css">
+    <!-- <link rel="stylesheet" href="plugins/dzsparallaxer/dzsparallaxer.css">
+    <link rel="stylesheet" href="plugins/dzsparallaxer/dzsscroller/scroller.css">
+    <link rel="stylesheet" href="plugins/dzsparallaxer/advancedscroller/plugin.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+
+    <link rel="stylesheet" href="plugins/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="plugins/slick-carousel/slick/slick.css"> -->
+
+    <!--
+    <link rel="stylesheet" href="css/unify.css">
+    -->
+    <link rel="stylesheet" href="css/unify-core.css">
+    <link rel="stylesheet" href="css/unify-components.css">
+    <link rel="stylesheet" href="css/unify-globals.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>遊部</title>
+</head>
+
+<body>
+
+    <!-- TOP -->
+    <section class="top">
+        <!-- PC用Facebookボタン-->
+        <a href="https://www.facebook.com/asobudeasobu/" class="pc btn btn-xs u-btn-facebook g-font-size-10" target="_blank">公式フェイスブック</a>
+
+        <div class="container top">
+            <div class="row">
+                <div class="col-2 col-md-3 g-pa-10">
+                    <!-- ロゴ-->
+                    <img class="logo" src="./image/logo.png" alt="遊部">
+                    <!-- SP用 PLAYLIFE-->
+                    <p class="sp playlife">SUPPORTED BY PLAYLIFE</p>
+                    <!-- PC用メニュー-->
+                    <div class="container pc g-pt-50">
+                        <div class="row g-py-10">
+                            <div class="col-3 g-pa-0">
+                                <img class="w-100" src="./image/menu-btn01-pc.png" />
+                            </div>
+                            <div class="col-9 g-pl-5">
+                                <a class="g-font-size-12 g-absolute-centered--y" href="javascript:void(0)" onclick="App.scroll('section.activity')">部活紹介</a>
+                            </div>
+                        </div>
+                        <div class="row g-py-10">
+                            <div class="col-3 g-pa-0">
+                                <img class="w-100" src="./image/menu-btn02-pc.png" />
+                            </div>
+                            <div class="col-9 g-pl-5">
+                                <a class="g-font-size-12 g-absolute-centered--y" href="javascript:void(0)" onclick="App.scroll('section.member')">部員紹介</a>
+                            </div>
+                        </div>
+                        <div class="row g-py-10">
+                            <div class="col-3 g-pa-0">
+                                <img class="w-100" src="./image/menu-btn03-pc.png" />
+                            </div>
+                            <div class="col-9 g-pl-5">
+                                <a class="g-font-size-12 g-absolute-centered--y" href="javascript:void(0)" onclick="App.scroll('section.attraction')">遊部の魅力</a>
+                            </div>
+                        </div>
+                        <div class="row g-py-10">
+                            <div class="col-3 g-pa-0">
+                                <img class="w-100" src="./image/menu-btn04-pc.png" />
+                            </div>
+                            <div class="col-9 g-pl-5">
+                                <a class="g-font-size-12 g-absolute-centered--y" href="javascript:void(0)" onclick="App.scroll('section.guide')">入部方法</a>
+                            </div>
+                        </div>
+                        <div class="row g-py-10">
+                            <div class="col-3 g-pa-0">
+                                <img class="w-100" src="./image/menu-btn05-pc.png" />
+                            </div>
+                            <div class="col-9 g-pl-5">
+                                <a class="g-font-size-12 g-absolute-centered--y" href="http://instagram.com/asobu_playlife/" target="_blank">INSTAGRAM</a>
+                            </div>
+                        </div>
+                        <div class="row g-pt-30">
+                            <div class="col-12">
+                                <div class="text-center">
+                                    <a href="#experience" class="btn btn-xs u-btn-asobu g-font-size-10">遊部イベントカレンダー</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="screen col-10 col-md-9 g-px-0">
+                    <!-- top動画-->
+                    <div>
+                        <video src="https://webliker.info/wp-content/uploads/2018/11/sample-video.mp4" autoplay muted
+                            playsinline></video>
+                        <!-- PC用 グランドオープン-->
+                        <img class="pc grand-open" src="./image/grand-open-pc.png" alt="grand open">
+                    </div>
+
+                    <!-- PC用 PLAYLIFE-->
+                    <p class="pc playlife">SUPPORTED BY PLAYLIFE</p>
+                </div>
+                <div class="col-12 g-pl-20 g-pt-30">
+                    <h1>オトナが放課後へ帰れる<br />遊びのコミュニティ</h1>
+                    <!-- SP用 グランドオープン-->
+                    <img class="sp grand-open" src="./image/grand-open-sp.png" alt="grand open">
+                </div>
+                <div class="col-12">
+                    <div class="text-center">
+                        <a href="#" class="sp btn btn-lg u-btn-asobu g-font-size-14">遊部イベントカレンダー</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 遊部に入部する -->
+    <section class="entrance g-py-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <article class="text-center g-rounded-20 g-color-white g-py-30">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="logo" src="./image/logo.png" alt="遊部">
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>月2,800円から始まる<br />大人のための<br />遊びのコミュニティ</h3>
+                                    <p class="g-pt-10">10種類以上の遊部のイベントから<br />お好きなものにご参加いただけます</p>
+                                    <div class="text-center">
+                                        <a href="#" class="btn btn-lg u-btn-white g-font-size-14">
+                                            遊部に入部する</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- コンセプト画像 -->
+    <section class="concept-image">
+        <div class="container">
+            <div class="row">
+                <div class="gallery media col-12 g-pl-0 swiper-carousel">
+                    <div class="g-width-20x">
+                        <img class="w-100" src="image/concept-1.jpg" alt="">
+                    </div>
+                    <div class="g-width-20x">
+                        <img class="w-100 g-ml-10" src="image/concept-2.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- コンセプト -->
+    <section class="concept">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 g-mt-30 g-px-30 g-pl-20">
+                    <h2>CONCEPT</h2>
+                    <article>
+                        <h3 class="g-pt-20">飲み会だけが遊びじゃない</h3>
+                        <p class="g-pt-15">
+                            子どもの頃は、どんなことでも遊びになった。<br />大人になると、「今度、遊ぼうよ」は飲み会を指すようになった。<br /><br />でも本当は、お金がなくても、お店がなくてもいい。頭を使って、体を動かして、やりたいことをやれば、今まで体験したことのない楽しい遊びが創れるはず。<br /><br />『遊部』はそんな想いから生まれた遊びのコミュニティサービス。会社や肩書や世代を超えて、遊びだけが共通言語の世界。<br /><br />さあ、みんなで放課後へ帰ろう。
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 部活-->
+    <section id="activity" class="activity">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 g-mt-50 g-px-30">
+                    <h2>部活紹介</h2>
+                </div>
+            </div>
+            <!-- BBQ部-->
+            <article class="row">
+                <div class="col-md-5 g-mt-50 g-px-0">
+                    <div class="logo">
+                        <img src="./image/activity-1-title.png">
+                    </div>
+                    <div class="contents">
+                        <h3>BBQ部</h3>
+                        <p class="g-line-height-20">飲み会だけが遊びじゃない<br />ここでしか出来ないレア体験</p>
+                    </div>
+                    <div class="photo">
+                        <img src="./image/activity-1-image.jpg" />
+                    </div>
+                </div>
+                <div class="col-md-7 g-mt-50 g-px-0">
+                    <div class="message">
+                        <div class="media">
+                            <div>
+                                <img class="g-width-80" src="./image/activity-1-rep.png" alt="">
+                            </div>
+                            <div class="g-ml-20 media-body">
+                                <h3 class="h5 g-letter-spaceing-6 g-mt-30">部長メッセージ</h3>
+                            </div>
+                        </div>
+                        <p>
+                            親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れ</p>
+                    </div>
+                    <div class="list">
+                        <div class="list-title">活動履歴</div>
+                        <ol>
+                            <li>みんなで一緒に作る!海鮮メインの豪華なBBQガーデンパーティー</li>
+                            <li>豪快に焼いてかぶりつく!オリジナルハンバーガー作りBBQ</li>
+                            <li>オリジナル燻製作りバーベキューwith鹿肉</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+            <!-- 釣部-->
+            <article class="row">
+
+                <div class="col-md-5 g-mt-50 g-px-0">
+                    <div class="logo">
+                        <img src="./image/activity-2-title.png">
+                    </div>
+                    <div class="contents">
+                        <h3>釣部</h3>
+                        <p class="g-line-height-20">飲み会だけが遊びじゃない<br />ここでしか出来ないレア体験</p>
+                    </div>
+                    <div class="photo">
+                        <img src="./image/activity-2-image.jpg">
+                    </div>
+                </div>
+                <div class="col-md-7 g-mt-50 g-px-0">
+                    <div class="message">
+                        <div class="media">
+                            <div>
+                                <img class="g-width-80" src="./image/activity-2-rep.png" alt="">
+                            </div>
+                            <div class="g-ml-20 media-body">
+                                <h3 class="h5 g-letter-spaceing-6 g-mt-30">部長メッセージ</h3>
+                            </div>
+                        </div>
+                        <p>
+                            親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れ</p>
+                    </div>
+                    <div class="list">
+                        <div class="list-title">活動履歴</div>
+                        <ol>
+                            <li>みんなで一緒に作る!海鮮メインの豪華なBBQガーデンパーティー</li>
+                            <li>豪快に焼いてかぶりつく!オリジナルハンバーガー作りBBQ</li>
+                            <li>オリジナル燻製作りバーベキューwith鹿肉</li>
+                        </ol>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- 遊部に入部する -->
+    <section class="entrance g-py-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <article class="text-center g-rounded-20 g-color-white g-py-30">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="logo" src="./image/logo.png" alt="遊部">
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>月2,800円から始まる<br />大人のための<br />遊びのコミュニティ</h3>
+                                    <p class="g-pt-10">10種類以上の遊部のイベントから<br />お好きなものにご参加いただけます</p>
+                                    <div class="text-center">
+                                        <a href="#" class="btn btn-lg u-btn-white g-font-size-14">
+                                            遊部に入部する</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- メンバー -->
+    <section id="member" class="member">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 g-my-50 g-px-30">
+                    <h2>部員紹介</h2>
+                </div>
+                <article class="col-md-4 ">
+                    <div class="photo">
+                        <img src="./image/member-1.jpg">
+                        <div class="name">
+                            <p class="g-ma-0">
+                                広告代理店勤務
+                            </p>
+                            <p class="g-font-size-17 g-letter-spaceing-6 g-font-weight-600 g-ma-0">
+                                中村優太</p>
+                        </div>
+                    </div>
+                    <p class="g-pa-20">
+                        親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜。
+                    </p>
+                </article>
+
+                <article class="col-md-4">
+                    <div class="photo">
+                        <img src="./image/member-1.jpg">
+                        <div class="name">
+                            <p class="g-ma-0">
+                                広告代理店勤務
+                            </p>
+                            <p class="g-font-size-17 g-letter-spaceing-6 g-font-weight-600 g-ma-0">
+                                中村優太</p>
+                        </div>
+                    </div>
+                    <p class="g-pa-20">
+                        親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜。
+                    </p>
+                </article>
+
+                <article class="col-md-4">
+                    <div class="photo">
+                        <img src="./image/member-1.jpg">
+                        <div class="name">
+                            <p class="g-ma-0">
+                                広告代理店勤務
+                            </p>
+                            <p class="g-font-size-17 g-letter-spaceing-6 g-font-weight-600 g-ma-0">
+                                中村優太</p>
+                        </div>
+                    </div>
+                    <p class="g-pa-20">
+                        親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜。
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- 魅力 -->
+    <section id="attraction" class="attraction g-mb-100">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 g-my-40 g-px-30">
+                    <h2>遊部の魅力</h2>
+                </div>
+
+                <article class="col-md-3">
+                    <div class="contents">
+                        <h3>一度はやってみたい<br />レアな遊び体験</h3>
+                        <p>
+                            廃校で運動会、釣った魚で寿司握り体験、燻製作り体験、ドローン操縦など他ではできない遊びと学びがたくさん
+                        </p>
+                    </div>
+                    <div class="photo">
+                        <img class="w-100" src="./image/attraction-1.jpg">
+                    </div>
+                </article>
+
+                <article class="col-md-3">
+                    <div class="contents">
+                        <h3>リーズナブル</h3>
+                        <p>
+                            遊部の部員になると参加費は実費のみ。通常 6000円以上の参加費が500円〜3000円で遊べます。
+                        </p>
+                    </div>
+                    <div class="photo">
+                        <img class="w-100" src="./image/attraction-1.jpg">
+                    </div>
+                </article>
+
+                <article class="col-md-3">
+                    <div class="contents">
+                        <h3>安心・安全・健全</h3>
+                        <p>
+                            イベントによくありがちな迷惑行為が一切ないように風紀委員とおもてなし委員が全力サポート
+                        </p>
+                    </div>
+                    <div class="photo">
+                        <img class="w-100" src="./image/attraction-1.jpg">
+                    </div>
+
+                </article>
+
+                <article class="col-md-3">
+                    <div class="contents">
+                        <h3>会社以外の<br />友達ができる</h3>
+                        <p>
+                            名刺交換禁止で仕事の話はNG。無邪気に遊んで自然に友達ができる
+                        </p>
+                    </div>
+                    <div class="photo">
+                        <img class="w-100" src="./image/attraction-1.jpg">
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- 遊部に入部する -->
+    <section class="entrance g-py-50">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <article class="text-center g-rounded-20 g-color-white g-py-30">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <img class="logo" src="./image/logo.png" alt="遊部">
+                                </div>
+                                <div class="col-md-6">
+                                    <h3>月2,800円から始まる<br />大人のための<br />遊びのコミュニティ</h3>
+                                    <p class="g-pt-10">10種類以上の遊部のイベントから<br />お好きなものにご参加いただけます</p>
+                                    <div class="text-center">
+                                        <a href="#" class="btn btn-lg u-btn-white g-font-size-14">
+                                            遊部に入部する</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 入部方法 -->
+    <section id="guide" class="guide">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 g-my-40 g-px-30">
+                    <h2>遊部への入部方法</h2>
+                </div>
+            </div>
+        </div>
+        <article>
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 g-py-30 g-px-0">
+                        <div class="contents">
+                            <img class="g-width-100" src="./image/yajirusi1.png" alt="">
+                            <div class="g-py-10 g-pl-20">
+                                <h3>体験入部参加</h3>
+                                <p>facebookイベントを見てpeatixで決済</p>
+                            </div>
+                        </div>
+                        <div class="contents">
+                            <img class="g-width-100" src="./image/yajirusi2.png" alt="">
+                            <div class="g-py-10 g-pl-20">
+                                <h3>入部申請/決済</h3>
+                                <p>こちらの<a href="#">決済ページ</a>よりクレジットカードにて決済</p>
+                            </div>
+                        </div>
+                        <div class="contents">
+                            <img class="g-width-100" src="./image/yajirusi3.png" alt="">
+                            <div class="g-py-10 g-pl-20">
+                                <h3>入部完了</h3>
+                                <p>facebook 部員専用グループへ招待</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </section>
+
+
+
+    <!-- 体験 -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 g-my-30 g-px-30">
+                    <h4 class="g-pl-20 g-font-size-15 g-line-height-20">まずは遊部を体験してみよう!
+                        <br />今後開催予定のイベントをご紹介します。</h2>
+                </div>
+                <div class="col-md-4 g-mt-10 g-px-0">
+                    <div class="schedule">
+                        <img src="./image/experience-1.jpg">
+                        <div class="date">
+                            <p class="date-month">8月</p>
+                            <p class="date-day">12日</p>
+                        </div>
+                    </div>
+                    <div class="contents">
+                        <p class="g-font-size-15 g-font-weight-600 g-ma-0">
+                            遊部の特別活動 vol.1</p>
+                        <p class="g-font-size-13 g-my-10 g-mx-0">
+                            40人限定の新宿で令和最初の大動会!空調完備だから快適だよだけ
+                            運動会!空調完備だから快適だ ど毛布は必要かもね!
+                        </p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-md u-btn-experience g-font-size-15">
+                                詳しく見る</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 g-mt-10 g-px-0">
+                    <div class="schedule">
+                        <img src="./image/experience-1.jpg">
+                        <div class="date">
+                            <p class="date-month">8月</p>
+                            <p class="date-day">12日</p>
+                        </div>
+                    </div>
+                    <div class="contents">
+                        <p class="g-font-size-15 g-font-weight-600 g-ma-0">
+                            遊部の特別活動 vol.1</p>
+                        <p class="g-font-size-13 g-my-10 g-mx-0">
+                            40人限定の新宿で令和最初の大動会!空調完備だから快適だよだけ
+                            運動会!空調完備だから快適だ ど毛布は必要かもね!
+                        </p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-md u-btn-experience g-font-size-15">
+                                詳しく見る</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 g-mt-10 g-px-0">
+                    <div class="schedule">
+                        <img src="./image/experience-1.jpg">
+                        <div class="date">
+                            <p class="date-month">8月</p>
+                            <p class="date-day">12日</p>
+                        </div>
+                    </div>
+                    <div class="contents">
+                        <p class="g-font-size-15 g-font-weight-600 g-ma-0">
+                            遊部の特別活動 vol.1</p>
+                        <p class="g-font-size-13 g-my-10 g-mx-0">
+                            40人限定の新宿で令和最初の大動会!空調完備だから快適だよだけ
+                            運動会!空調完備だから快適だ ど毛布は必要かもね!
+                        </p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-md u-btn-experience g-font-size-15">
+                                詳しく見る</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 g-mt-10 g-px-0">
+                    <div class="schedule">
+                        <img src="./image/experience-1.jpg">
+                        <div class="date">
+                            <p class="date-month">8月</p>
+                            <p class="date-day">12日</p>
+                        </div>
+                    </div>
+                    <div class="contents">
+                        <p class="g-font-size-15 g-font-weight-600 g-ma-0">
+                            遊部の特別活動 vol.1</p>
+                        <p class="g-font-size-13 g-my-10 g-mx-0">
+                            40人限定の新宿で令和最初の大動会!空調完備だから快適だよだけ
+                            運動会!空調完備だから快適だ ど毛布は必要かもね!
+                        </p>
+                        <div class="text-center">
+                            <a href="#" class="btn btn-md u-btn-experience g-font-size-15">
+                                詳しく見る</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- 質問 -->
+    <section class="question">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 g-my-30 g-px-30">
+                    <h2>よくあるご質問</h2>
+                </div>
+                <div class="col-12 g-mt-10">
+                    <div id="question-accordion" class="u-accordion" role="tablist" aria-multiselectable="true">
+
+                        <!-- Card -->
+                        <div class="rounded-0 g-brd-bottom g-brd-gray-dark-v4 g-ml-10 g-py-10">
+                            <div id="question-accordion-heading-01" class="u-accordion__header g-py-10 g-px-0"
+                                role="tab">
+                                <h5 class="mb-0 g-font-size-default g-font-weight-600 g-line-height-2">
+                                    <a class="d-flex justify-content-between g-color-main g-text-underline--none--hover"
+                                        href="#question-accordion-body-01" data-toggle="collapse"
+                                        data-parent="#question-accordion" aria-expanded="false"
+                                        aria-controls="question-accordion-body-01">
+                                        Q. 遊部に参加するのに年齢や職業などの制限はありますか?
+                                        <span
+                                            class="u-accordion__control-icon g-color-gray-dark-v5 g-font-size-30 g-mt-minus-10--md g-ml-20">
+                                            <i class="hs-admin-angle-down"></i>
+                                            <i class="hs-admin-angle-up"></i>
+                                        </span>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="question-accordion-body-01" class="collapse" role="tabpanel"
+                                aria-labelledby="question-accordion-heading-01" data-parent="#question-accordion">
+                                <div class="u-accordion__body">
+                                    A. 親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Card -->
+
+                        <!-- Card -->
+                        <div class="rounded-0 g-brd-bottom g-brd-gray-dark-v4 g-ml-10 g-py-10">
+                            <div id="question-accordion-heading-02" class="u-accordion__header g-py-10 g-px-0"
+                                role="tab">
+                                <h5 class="mb-0 g-font-size-default g-font-weight-600 g-line-height-2">
+                                    <a class="d-flex justify-content-between g-color-main g-text-underline--none--hover"
+                                        href="#question-accordion-body-02" data-toggle="collapse"
+                                        data-parent="#question-accordion" aria-expanded="false"
+                                        aria-controls="question-accordion-body-02">
+                                        Q. 遊部に参加するのに年齢や職業などの制限はありますか?
+                                        <span
+                                            class="u-accordion__control-icon g-color-gray-dark-v5 g-font-size-30 g-mt-minus-10--md g-ml-20">
+                                            <i class="hs-admin-angle-down"></i>
+                                            <i class="hs-admin-angle-up"></i>
+                                        </span>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="question-accordion-body-02" class="collapse" role="tabpanel"
+                                aria-labelledby="question-accordion-heading-02" data-parent="#question-accordion">
+                                <div class="u-accordion__body ">
+                                    A. 親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Card -->
+
+                        <!-- Card -->
+                        <div class="rounded-0 g-brd-bottom g-brd-gray-dark-v4 g-ml-10 g-py-10">
+                            <div id="question-accordion-heading-03" class="u-accordion__header g-py-10 g-px-0"
+                                role="tab">
+                                <h5 class="mb-0 g-font-size-default g-font-weight-600 g-line-height-2">
+                                    <a class="d-flex justify-content-between g-color-main g-text-underline--none--hover"
+                                        href="#question-accordion-body-03" data-toggle="collapse"
+                                        data-parent="#question-accordion" aria-expanded="false"
+                                        aria-controls="question-accordion-body-03">
+                                        Q. 遊部に参加するのに年齢や職業などの制限はありますか?
+                                        <span
+                                            class="u-accordion__control-icon g-color-gray-dark-v5 g-font-size-30 g-mt-minus-10--md g-ml-20">
+                                            <i class="hs-admin-angle-down"></i>
+                                            <i class="hs-admin-angle-up"></i>
+                                        </span>
+                                    </a>
+                                </h5>
+                            </div>
+                            <div id="question-accordion-body-03" class="collapse" role="tabpanel"
+                                aria-labelledby="question-accordion-heading-03" data-parent="#question-accordion">
+                                <div class="u-accordion__body ">
+                                    A. 親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Card -->
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- End News -->
+
+    <a class="js-go-to u-go-to-v1" href="#" data-type="fixed" data-position='{
+        "bottom": 15,
+        "right": 15
+      }' data-offset-top="400" data-compensation="#js-header" data-show-effect="zoomIn">
+        <i class="hs-icon hs-icon-arrow-top"></i>
+    </a>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.0.0/jquery-migrate.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script> -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="js/app.js"></script>
+    
+
+</body>
+
+</html>

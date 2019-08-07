@@ -1,0 +1,610 @@
+@charset "UTF-8";
+
+section.top,
+section.entrance,
+section.concept-image,
+section.concept,
+section.activity,
+section.member,
+section.attraction,
+section.guide,
+section.experience,
+section.question
+{
+    /* display :none; */
+}
+/* -------------------------------------------------------------------------- */
+/* 基本レイアウト */
+/* -------------------------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP');
+body {
+    /* font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN', Meiryo, メイリオ, sans-serif; */
+    font-family: 'Noto Sans JP', sans-serif;
+    background-color: #eff3f4;
+    letter-spacing: 0.2em;
+    font-size: 0.92857rem;
+}
+
+.u-btn-asobu {
+    background-color: #eac5c5;
+}
+.u-btn-facebook {
+    background-color: #6d8dad;
+}
+
+h1 {
+    font-size: 1.21429rem !important;
+    letter-spacing: 0.5em;
+    line-height: 2em;
+}
+h2 {
+    font-size: 1.5rem !important;
+    letter-spacing: 0.5em;
+    font-weight: normal;
+}
+h3 {
+    font-size: 1.21429rem !important;
+    letter-spacing: 0.3em;
+    font-weight: 600;
+    line-height: 2em;
+}
+h4 {
+    font-size: 1.21429rem !important;
+    letter-spacing: 0.3em;
+    line-height: 2em;
+}
+
+p {
+    font-size: 0.92857rem;
+    line-height: 2.0rem;
+}
+.btn {
+    border-radius: 50px;
+}
+.btn-lg {
+    padding: 10px 45px;
+    font-weight: 500;
+}
+.btn-md {
+    padding: 5px 30px;
+    font-weight: 500;
+}
+.btn-xs {
+    padding: 5px 20px;
+    font-weight: 500;
+}
+.left {
+    position : absolute;
+    left : 0;
+}
+.right {
+    position : absolute;
+    right : 0;
+}
+@media (max-width: 767px) {
+    .pc {
+        display:none;
+    }
+}
+@media (min-width: 768px) {
+    .sp {
+        display:none;
+    }
+    .btn {
+        border-radius: 10px;
+    }
+}
+
+a {
+    color: #555;
+}
+a:hover {
+    /* color: #999; */
+    color: red;
+    text-decoration: none;
+}
+/* -------------------------------------------------------------------------- */
+/* 個別レイアウト : TOP */
+/* -------------------------------------------------------------------------- */
+section.top .playlife {
+    letter-spacing: 0.6;
+    writing-mode: vertical-rl;
+}
+section.top .logo {
+    width: 100%;
+    max-width: 80px;
+}
+section.top .u-btn-facebook {
+    position: absolute;
+    top : 20px;
+    right: 10px;
+    z-index: 1;
+}
+@media (max-width: 767px) {
+    section.top .screen {
+        overflow:hidden;
+    }
+    section.top .screen div{
+        width:500px;
+    }
+    section.top .playlife {
+        font-size: 0.35714rem;
+        margin: 50px 0 0 0;
+    }
+    section.top .grand-open {
+        padding: 1.42857rem 0;
+        max-width: 250px;
+        width: 100%!important;
+    }
+}
+@media (min-width: 768px) {
+    section.top h1 {
+        margin-left: 20px;
+    }
+    section.top .screen {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    }
+    section.top .screen div{
+        width:98%;
+        position: relative;
+    }
+    section.top .playlife {
+        font-size: 0.64286rem;
+        margin: 100px 0 0 0;
+    }
+    section.top .grand-open {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        max-width: 250px;
+    }
+}
+/* -------------------------------------------------------------------------- */
+/* 個別レイアウト : コンセプト画像 */
+/* -------------------------------------------------------------------------- */
+@media (min-width: 768px) {
+    section.concept-image {
+        background-color: #d3c7a9;
+        margin-top: 2.85714rem;
+    }
+    section.concept-image .row {
+        overflow: hidden;
+    }
+    section.concept-image .gallery{
+        margin-top: -2.85714rem;
+        margin-left: 1.42857rem;
+    }
+}
+/* -------------------------------------------------------------------------- */
+/* 個別レイアウト : コンセプト */
+/* -------------------------------------------------------------------------- */
+section.concept h2 {
+    border-left: solid 4px #f29600;
+    padding-left: 1.42857rem !important;
+}
+@media (max-width: 767px) {
+    section.concept {
+        background: -moz-linear-gradient(top, #eff3f4, #d3c7a9);
+        background: -webkit-linear-gradient(top, #eff3f4, #d3c7a9);
+        background: linear-gradient(to bottom, #eff3f4, #d3c7a9);
+    }
+}
+@media (min-width: 768px) {
+    section.concept {
+        background-color: #d3c7a9;
+    }
+    section.concept article {
+        color:#fff;
+        margin-left: 1.42857rem;
+    }
+}
+/* -------------------------------------------------------------------------- */
+/* 個別レイアウト : 入部 */
+/* -------------------------------------------------------------------------- */
+section.entrance article {
+    background-color: #3F5063;
+}
+
+@media (max-width: 767px) {
+    section.entrance img.logo {
+        width: 60px;
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 768px) {
+    section.entrance article {
+        margin: 0 5%;
+    }
+    section.entrance img.logo {
+        width: 50%;
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        -webkit-backface-visibility: hidden;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/* 個別レイアウト : 部活紹介 */
+/* -------------------------------------------------------------------------- */
+section.activity h2 {
+    border-left: solid 4px #009fe8;
+    padding-left: 1.42857rem !important;
+}
+section.activity article .logo img{
+    width: 100px;
+}
+section.activity article:nth-of-type(odd) .logo{
+    text-align: left;
+    padding-left: 20px;
+}
+section.activity article:nth-of-type(even) .logo{
+    text-align: right;
+    padding-right: 20px;
+}
+section.activity article .contents {
+    padding : 1.42857rem 1rem 5.85714rem 1.42857rem;
+}
+section.activity article:nth-of-type(odd) .contents {
+    text-align: right;
+    background-color: #e4e3e2;
+    margin: -2.85714rem 0 0 3.57143rem;
+}
+section.activity article:nth-of-type(even) .contents{
+    text-align: left;
+    background-color: #d3dbe0;
+    margin: -2.85714rem 3.57143rem 0 0;
+}
+section.activity .photo img{
+    margin-top: -5.14286rem;
+    max-width: 90%;
+}
+section.activity .message {
+    padding: 0 2.21429rem;
+    margin-bottom: 2.14286rem;
+}
+section.activity article:nth-of-type(even) .photo{
+    text-align: right;
+}
+section.activity article:nth-of-type(odd) .list {
+    border:2px solid #86a895;
+}
+section.activity article:nth-of-type(even) .list {
+    border:2px solid #8494a5;
+}
+section.activity .list {
+    margin: 1.42857rem;
+    padding: 0 0.71429rem;
+}
+section.activity .list ol {
+	margin: 0;
+	padding: 0;
+	font-size: 86%;
+	list-style: none;
+}
+section.activity .list ol li {
+    padding-left: 35px;
+	margin-bottom: 15px;
+	background: left top 3px no-repeat;
+    background-size: 15px auto;
+}
+section.activity .list .list-title {
+    background-color: #eff3f4;
+    width: 75px;
+    text-align: center;
+    margin: -0.71429rem 0 1.42857rem 2.14286rem;
+    font-size: 0.85714rem;
+}
+section.activity article:nth-of-type(odd) .list .list-title {
+    color : #86a895;
+}
+section.activity article:nth-of-type(even) .list .list-title {
+    color : #8494a5;
+}
+section.activity article:nth-of-type(odd) .list ol li {
+    background-image: url("../image/activity-1-list.png");
+}
+section.activity article:nth-of-type(even) .list ol li {
+    background-image: url("../image/activity-2-list.png");
+}
+
+@media (max-width: 767px) {
+
+}
+@media (min-width: 768px) {
+    section.activity article .logo{
+        text-align: left !important;;
+        padding: 0 !important;   
+    }
+    section.activity article .logo img{
+        width: 120px;
+    }
+    section.activity article .contents{
+        text-align: left !important;
+        padding : 2.42857rem 0rem 5.85714rem 3.42857rem;
+        margin: -2.85714rem 0 0 3.57143rem !important;
+    }
+    section.activity article:nth-of-type(even) .photo{
+        text-align: left;
+    }
+
+    section.activity article:nth-of-type(odd) .contents {
+        background-color: #e3eae3;
+    }
+    section.activity .list {
+        border: 0 !important;
+    }
+    section.activity .list .list-title {
+        background-color: #eff3f4;
+        text-align: left;
+        margin-left: 0;
+    }
+    section.activity .list ol {
+        margin: 0 0 0 5px;
+    }
+    section.activity .message {
+        padding-top: 4.14286rem;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/* 個別レイアウト : 部員紹介 */
+/* -------------------------------------------------------------------------- */
+section.member {
+    background-color: #e3e5e3;
+}
+section.member h2 {
+    border-left: solid 4px #e84128;
+    padding-left: 1.42857rem !important;
+}
+section.member .photo {
+    position: relative;
+}
+section.member .photo img {
+    width: 70%;
+}
+section.member .name {
+    position: absolute;
+    top: 60%;
+    padding: 10px 20px;
+    background-color: #fff;
+    width: 200px;
+    right : 0;
+}
+
+@media (max-width: 767px) {
+
+    section.member article:nth-of-type(even) .name {
+        left : 0;
+        right : auto;
+    }
+    section.member article:nth-of-type(even) .name p,
+    section.member article:nth-of-type(even) .photo {
+        text-align: right;
+    }
+}
+@media (min-width: 768px) {
+    section.member .photo img {
+        width: 80%;
+    }
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* 個別レイアウト : 魅力 */
+/* -------------------------------------------------------------------------- */
+section.attractin {
+    overflow: hidden;
+}
+section.attraction h2 {
+    border-left: solid 4px #7cc8f9;
+    padding-left: 1.42857rem !important;
+}
+section.attraction article {
+    padding: 0;
+}
+section.attraction .contents {
+    padding : 30px;
+    position: relative;
+}
+section.attraction .contents p {
+    margin-top: 1.42857rem;
+}
+section.attraction .photo {
+    position: absolute;
+    bottom: -50px;
+    left: 0;
+    width: 90%;
+    margin-top: -7.14286rem;
+    z-index: 1;
+}
+section.attraction article:nth-of-type(1) .contents {
+    background-color: #8c8b6c;
+    padding-top : 20px;
+    color:white;
+}
+section.attraction article:nth-of-type(1) .photo {
+    left: auto;
+    right: 0;
+}
+section.attraction article:nth-of-type(3) .contents {
+    background-color: #5d717f;
+    color:white;
+}
+section.attraction article:nth-of-type(3) .photo {
+    left: auto;
+    right: 0;
+}
+
+@media (max-width: 767px) {
+    section.attraction .photo {
+        max-width: 380px;
+    }
+    section.attraction article:nth-of-type(1) .contents {
+        padding: 20px 30px 150px 30px;
+    }
+    section.attraction article:nth-of-type(2) .contents {
+        padding: 70px 30px 150px 30px;
+
+    }
+    section.attraction article:nth-of-type(3) .contents {
+        padding: 70px 30px 150px 30px;
+    }
+    section.attraction article:nth-of-type(4) .contents {
+        padding: 70px 30px 150px 30px;
+    }
+}
+@media (min-width: 768px) {
+    section.attraction  article .contents {
+        color:white;
+        min-height: 250px;
+        padding : 25px;
+        z-index: 100;
+    }
+
+    section.attraction article:nth-of-type(1) .contents {
+        margin: 0 -10px;
+        padding-right: 30px;
+    }
+    section.attraction article:nth-of-type(2) .contents {
+        margin-top: 100px;
+        margin-left: -20px;
+        background-color: #5d797f;
+    }
+    section.attraction article:nth-of-type(3) .contents {
+        margin-top: 200px;
+        margin-left: -20px;
+        background-color: #7c6560;
+    }
+    section.attraction article:nth-of-type(4) .contents {
+        margin-top: 300px;
+        margin-left: -20px;
+        background-color: #5e7a5f;
+    }
+    section.attraction article:nth-of-type(2) .photo,
+    section.attraction article:nth-of-type(4) .photo  {
+        display: none;
+    }
+    section.attraction article:nth-of-type(1) .photo {
+        width:230%;
+        z-index: -1;
+        left: -30%;
+        bottom: -10%;
+        margin-right: 20px;
+    }
+    section.attraction article:nth-of-type(3) .photo {
+        width:230%;
+        z-index: -1;
+        left: 0%;
+        top: 10%;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/* 個別レイアウト : 入部方法 */
+/* -------------------------------------------------------------------------- */
+section.guide h2 {
+    border-left: solid 4px #f29600;
+    padding-left: 1.42857rem !important;
+}
+section.guide article {
+    background-color: #8a989f;
+    color: #fff;
+}
+section.guide .contents {
+    padding: 0.71429rem  2.14286rem;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+section.guide div.contents:not(:last-child) {
+    min-height: 140px;
+}
+
+section.guide a {
+    color: #fff;
+    text-decoration	:underline;
+}
+section.guide a:hover {
+    /* color: red;
+    text-decoration	:underline; */
+}
+
+@media (min-width: 768px) {
+    section.guide .contents {
+        margin-left: 1.5em;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/* 個別レイアウト : 体験 */
+/* -------------------------------------------------------------------------- */
+section.experience .schedule img {
+    position: absolute;
+    top:-1.5em;    
+    width: 125px;
+}
+
+section.experience .schedule {
+    position: relative;
+}
+section.experience .schedule .date {
+    position: absolute;
+    top:20px;
+    background-color: rgba(255,255,255,0.7);
+    text-align: center;
+    padding: 0.35714rem;
+    width: 70px;
+}
+section.experience .schedule .date .date-month{
+    margin: 0;
+    line-height: 1.2rem !important;
+    font-size: 0.85714rem;
+    color: red;
+}
+section.experience .schedule .date .date-day{
+    margin: 0;
+    line-height: 1.2rem !important;
+    font-size: 1.07143rem;
+}
+section.experience .contents {
+    background-color: #e3e5e3;
+    margin-bottom: 30px;
+}
+.u-btn-experience {
+    background-color: #3f5063;
+    color:white;
+}
+
+@media (max-width: 767px) {
+    section.experience .contents {
+        padding: 1rem 1rem 1rem 7rem;
+        margin-left: 3em;
+    }
+}
+@media (min-width: 768px) {
+    section.experience .schedule img {
+        width: 70%;
+        max-width: 220px;
+    }
+    section.experience .contents {
+        padding: 160px 1rem 2rem 2rem;
+        margin: 2rem;
+    }
+}
+
+/* -------------------------------------------------------------------------- */
+/* 個別レイアウト : よくあるご質問 */
+/* -------------------------------------------------------------------------- */
+section.question h2 {
+    border-left: solid 4px #f29600;
+    padding-left: 1.42857rem !important;
+}
+
