@@ -249,7 +249,7 @@ section.activity article:nth-of-type(even) .logo{
     padding-right: 20px;
 }
 section.activity article .contents {
-    padding : 1.42857rem 1rem 5.85714rem 1.42857rem;
+    padding : 1.42857rem 30px 5.85714rem;
 }
 section.activity article:nth-of-type(odd) .contents {
     text-align: right;
@@ -292,7 +292,7 @@ section.activity .list ol li {
     padding-left: 35px;
 	margin-bottom: 15px;
 	background: left top 3px no-repeat;
-    background-size: 15px auto;
+    background-size: 14px auto;
 }
 section.activity .list .list-title {
     background-color: #eff3f4;
@@ -420,7 +420,7 @@ section.attraction .photo {
     position: absolute;
     bottom: -50px;
     left: 0;
-    width: 90%;
+    width: 92%;
     margin-top: -7.14286rem;
     z-index: 1;
 }
@@ -585,8 +585,8 @@ section.experience .contents {
 
 @media (max-width: 767px) {
     section.experience .contents {
-        padding: 1rem 1rem 1rem 7rem;
-        margin-left: 3em;
+        padding: 1rem 1rem 1rem 8rem;
+        margin-left: 30px;
     }
 }
 @media (min-width: 768px) {
@@ -607,4 +607,38 @@ section.question h2 {
     border-left: solid 4px #f29600;
     padding-left: 1.42857rem !important;
 }
+section.question .u-accordion__header {
+    position: relative;
+}
+section.question .u-accordion__control-icon {
+    position: absolute;
+    right: 0;
+    top: 0.1em;
+}
+section.question .u-accordion__body {
+    padding: 0;
+}
 
+/* -------------------------------------------------------------------------- */
+/* 個別レイアウト : フッタ */
+/* -------------------------------------------------------------------------- */
+footer {
+    background-color: #8a989f;
+    color: white;
+}
+
+footer h2 {
+    border-left: solid 4px #fff;
+    padding-left: 1.42857rem !important;
+}
+
+footer .flink a {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 0.85714rem;
+}
+footer .flink a:hover {
+    color : #3F5063;
+}
+footer .list-inline-item:not(:last-child) {
+    margin-right: 0rem;
+}
