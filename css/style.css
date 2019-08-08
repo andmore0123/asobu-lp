@@ -51,7 +51,7 @@ h3 {
 h4 {
     font-size: 1.21429rem !important;
     letter-spacing: 0.3em;
-    line-height: 2em;
+    line-height: 3em;
 }
 
 p {
@@ -132,9 +132,8 @@ section.top .u-btn-facebook {
         margin: 50px 0 0 0;
     }
     section.top .grand-open {
-        padding: 1.42857rem 0;
         max-width: 250px;
-        width: 100%!important;
+        width: 85%!important;
     }
 }
 @media (min-width: 768px) {
@@ -250,6 +249,7 @@ section.activity article:nth-of-type(even) .logo{
 }
 section.activity article .contents {
     padding : 1.42857rem 30px 5.85714rem;
+    font-weight: 600;
 }
 section.activity article:nth-of-type(odd) .contents {
     text-align: right;
@@ -273,10 +273,10 @@ section.activity article:nth-of-type(even) .photo{
     text-align: right;
 }
 section.activity article:nth-of-type(odd) .list {
-    border:2px solid #86a895;
+    border:1px solid #86a895;
 }
 section.activity article:nth-of-type(even) .list {
-    border:2px solid #8494a5;
+    border:1px solid #8494a5;
 }
 section.activity .list {
     margin: 1.42857rem;
@@ -457,7 +457,7 @@ section.attraction article:nth-of-type(3) .photo {
         padding: 70px 30px 150px 30px;
     }
     section.attraction article:nth-of-type(4) .contents {
-        padding: 70px 30px 150px 30px;
+        padding: 70px 30px 0 30px;
     }
 }
 @media (min-width: 768px) {
