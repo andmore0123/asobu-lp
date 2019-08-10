@@ -13,134 +13,16 @@ section.question
 {
     /* display :none; */
 }
-/* -------------------------------------------------------------------------- */
-/* 基本レイアウト */
-/* -------------------------------------------------------------------------- */
-html {
-    overflow-x: hidden;
-}
 
-/* @import url('https://fonts.googleapis.com/css?family=Noto+Sans+JP'); */
-body {
-    /* font-family: 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN', Meiryo, メイリオ, sans-serif; */
-    /* font-family: 'Noto Sans JP', sans-serif; */
-    font-family: "Hiragino Kaku Gothic ProN", "ヒラギノ角ゴ ProN W3", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
-    background-color: #eff3f4;
-    letter-spacing: 0.2em;
-    font-size: 0.85714rem;
-    /* font-size: 0.92857rem; */
-}
-
-.u-btn-asobu {
-    background-color: #eac5c5;
-}
-.u-btn-facebook {
-    background-color: #6d8dad;
-}
-
-h1 {
-    font-size: 1.21429rem;
-    letter-spacing: 0.5em;
-    line-height: 2em;
-}
-h2 {
-    font-size: 1.14286rem;
-    letter-spacing: 0.5em;
-    font-weight: normal;
-}
-h3 {
-    font-size: 1.28571rem;
-    letter-spacing: 0.3em;
-    font-weight: 600;
-    line-height: 2em;
-}
-h4 {
-    font-size: 1.21429rem;
-    letter-spacing: 0.3em;
-    line-height: 3em;
-}
-
-p {
-    /* font-size: 0.92857rem; */
-    line-height: 2.0rem;
-}
-.btn {
-    border-radius: 50px;
-}
-.btn-lg {
-    padding: 10px 30px;
-    font-weight: 600;
-    letter-spacing: 0.3em;
-}
-.btn-md {
-    padding: 5px 30px;
-    font-weight: 500;
-}
-.btn-xs {
-    padding: 5px 20px;
-    font-weight: 500;
-}
-.left {
-    position : absolute;
-    left : 0;
-}
-.right {
-    position : absolute;
-    right : 0;
-}
-@media (max-width: 767px) {
-    .pc {
-        display:none;
-    }
-}
-@media (min-width: 768px) {
-    .sp {
-        display:none;
-    }
-    .btn {
-        border-radius: 10px;
-    }
-}
-
-a {
-    color: #555;
-}
-a:hover {
-    /* color: #999; */
-    color: red;
-    text-decoration: none;
-}
-
-.g-font-mincho {
-    font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", serif;
-}
 /* -------------------------------------------------------------------------- */
 /* 個別レイアウト : TOP */
 /* -------------------------------------------------------------------------- */
-section.top .playlife {
-    letter-spacing: 0.6;
-    writing-mode: vertical-rl;
-}
-section.top .logo {
-    width: 100%;
-    max-width: 80px;
-}
-section.top .u-btn-facebook {
-    position: absolute;
-    top : 20px;
-    right: 10px;
-    z-index: 1;
-}
 @media (max-width: 767px) {
     section.top .screen {
         overflow:hidden;
     }
     section.top .screen div{
         width:500px;
-    }
-    section.top .playlife {
-        font-size: 0.35714rem;
-        margin: 50px 0 0 0;
     }
     section.top .grand-open {
         max-width: 200px;
@@ -161,10 +43,6 @@ section.top .u-btn-facebook {
         width:98%;
         position: relative;
     }
-    section.top .playlife {
-        font-size: 0.64286rem;
-        margin: 100px 0 0 0;
-    }
     section.top .grand-open {
         position: absolute;
         bottom: 10px;
@@ -172,6 +50,7 @@ section.top .u-btn-facebook {
         max-width: 250px;
     }
 }
+
 /* -------------------------------------------------------------------------- */
 /* 個別レイアウト : コンセプト画像 */
 /* -------------------------------------------------------------------------- */
@@ -207,39 +86,9 @@ section.concept h2 {
         color:#fff;
         margin-left: 1.42857rem;
     }
-}
-/* -------------------------------------------------------------------------- */
-/* 個別レイアウト : 入部 */
-/* -------------------------------------------------------------------------- */
-section.entrance article {
-    background-color: #3F5063;
-}
-section.entrance h3 {
-    font-weight: normal;
-}
-section.entrance .btn {
-    color : #3F5063;
-    padding: 10px 50px;
-}
-@media (max-width: 767px) {
-    section.entrance img.logo {
-        width: 60px;
-        margin-bottom: 20px;
-    }
-}
-@media (min-width: 768px) {
-    section.entrance article {
-        margin: 0 5%;
-    }
-    section.entrance img.logo {
-        width: 50%;
-        position: absolute !important;
-        top: 50% !important;
-        left: 50% !important;
-        webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-        -webkit-backface-visibility: hidden;
+    section.concept h3 {
+        font-size: 1.21429rem !important;
+        font-weight: normal;
     }
 }
 
@@ -328,9 +177,14 @@ section.activity article:nth-of-type(even) .list ol li {
 }
 
 @media (max-width: 767px) {
-
+    section.activity h3 {
+        font-size: 1.71429rem;
+    }
 }
 @media (min-width: 768px) {
+    section.activity article {
+        margin: 0 25px;
+    }
     section.activity article .logo{
         text-align: left !important;;
         padding: 0 !important;   
@@ -405,6 +259,7 @@ section.member .name {
 @media (min-width: 768px) {
     section.member .photo img {
         width: 80%;
+        margin-left: 15px;
     }
 }
 
@@ -415,10 +270,6 @@ section.member .name {
 section.attraction h2 {
     border-left: solid 4px #7cc8f9;
     padding-left: 1.14286rem;
-}
-section.attraction h3 {
-    font-size: 1.42857rem;
-    letter-spacing: 0.42857rem;
 }
 section.attraction article {
     padding: 0;
@@ -455,6 +306,10 @@ section.attraction article:nth-of-type(3) .photo {
 }
 
 @media (max-width: 767px) {
+    section.attraction h3 {
+        font-size: 1.42857rem;
+        letter-spacing: 0.42857rem;
+    }
     section.attraction .photo {
         max-width: 380px;
     }
@@ -479,24 +334,23 @@ section.attraction article:nth-of-type(3) .photo {
         padding : 40px;
         z-index: 100;
     }
-
     section.attraction article:nth-of-type(1) .contents {
         margin: 0 -10px;
         padding-right: 30px;
     }
     section.attraction article:nth-of-type(2) .contents {
         margin-top: 100px;
-        margin-left: -20px;
+        margin: 100px -10px 0 -10px;
         background-color: #5d797f;
     }
     section.attraction article:nth-of-type(3) .contents {
         margin-top: 200px;
-        margin-left: -20px;
+        margin: 200px -10px 0 -10px;
         background-color: #7c6560;
     }
     section.attraction article:nth-of-type(4) .contents {
         margin-top: 300px;
-        margin-left: -20px;
+        margin: 300px -10px 0 -10px;
         background-color: #5e7a5f;
     }
     section.attraction article:nth-of-type(2) .photo,
@@ -551,7 +405,7 @@ section.guide a:hover {
 
 @media (min-width: 768px) {
     section.guide .contents {
-        margin-left: 1.5em;
+        margin-left: 8em;
     }
 }
 
@@ -634,27 +488,8 @@ section.question .u-accordion__control-icon {
 section.question .u-accordion__body {
     padding: 0;
 }
-
-/* -------------------------------------------------------------------------- */
-/* 個別レイアウト : フッタ */
-/* -------------------------------------------------------------------------- */
-footer {
-    background-color: #8a989f;
-    color: white;
-}
-
-footer h2 {
-    border-left: solid 4px #fff;
-    padding-left: 1.14286rem;
-}
-
-footer .flink a {
-    color: rgba(255, 255, 255, 0.8);
-    font-size: 0.85714rem;
-}
-footer .flink a:hover {
-    color : #3F5063;
-}
-footer .list-inline-item:not(:last-child) {
-    margin-right: 0rem;
+@media (min-width: 768px) {
+    section.question #question-accordion {
+        margin-left: 1.14286rem;
+    }
 }
