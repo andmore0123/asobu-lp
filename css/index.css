@@ -54,34 +54,30 @@ section.question
 /* -------------------------------------------------------------------------- */
 /* 個別レイアウト : コンセプト画像 */
 /* -------------------------------------------------------------------------- */
+section.concept-image {
+    background-color: #405062;
+    margin-top: 2.85714rem;
+}
+section.concept-image .gallery{
+    margin-top: -2.85714rem;
+}
 @media (min-width: 768px) {
-    section.concept-image {
-        background-color: #d3c7a9;
-        margin-top: 2.85714rem;
-    }
     section.concept-image .gallery{
-        margin-top: -2.85714rem;
         margin-left: 1.42857rem;
     }
 }
 /* -------------------------------------------------------------------------- */
 /* 個別レイアウト : コンセプト */
 /* -------------------------------------------------------------------------- */
+section.concept {
+    background-color: #405062;
+    color:#fff;
+}
 section.concept h2 {
     border-left: solid 4px #f29600;
     padding-left: 1.14286rem;
 }
-@media (max-width: 767px) {
-    section.concept {
-        background: -moz-linear-gradient(top, #eff3f4, #d3c7a9);
-        background: -webkit-linear-gradient(top, #eff3f4, #d3c7a9);
-        background: linear-gradient(to bottom, #eff3f4, #d3c7a9);
-    }
-}
 @media (min-width: 768px) {
-    section.concept {
-        background-color: #d3c7a9;
-    }
     section.concept article {
         color:#fff;
         margin-left: 1.42857rem;
@@ -111,17 +107,16 @@ section.activity article:nth-of-type(even) .logo{
     padding-right: 20px;
 }
 section.activity article .contents {
+    background-color: #d2dade;
     padding : 1.42857rem 30px 5.85714rem;
     font-weight: 600;
 }
 section.activity article:nth-of-type(odd) .contents {
     text-align: right;
-    background-color: #e4e3e2;
     margin: -2.85714rem 0 0 3.57143rem;
 }
 section.activity article:nth-of-type(even) .contents{
     text-align: left;
-    background-color: #d3dbe0;
     margin: -2.85714rem 3.57143rem 0 0;
 }
 section.activity .photo img{
@@ -201,9 +196,6 @@ section.activity article:nth-of-type(even) .list ol li {
         text-align: left;
     }
 
-    section.activity article:nth-of-type(odd) .contents {
-        background-color: #e3eae3;
-    }
     section.activity .list {
         border: 0 !important;
     }
@@ -224,7 +216,7 @@ section.activity article:nth-of-type(even) .list ol li {
 /* 個別レイアウト : 部員紹介 */
 /* -------------------------------------------------------------------------- */
 section.member {
-    background-color: #e3e5e3;
+    background-color: #d2dade;
 }
 section.member h2 {
     border-left: solid 4px #e84128;
@@ -441,7 +433,7 @@ section.experience .schedule .date .date-day{
     font-size: 1.07143rem;
 }
 section.experience .contents {
-    background-color: #e3e5e3;
+    background-color: #d2dade;
     margin-bottom: 30px;
 }
 section.experience .contents p{

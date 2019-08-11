@@ -26,7 +26,7 @@ h2 {
 }
 h3 {
     font-size: 1.28571rem;
-    letter-spacing: 0.3em;
+    letter-spacing: 0.17em;
     font-weight: 600;
     line-height: 2em;
 }
@@ -131,10 +131,11 @@ a:hover {
 /* 共通レイアウト：ボタン */
 /* -------------------------------------------------------------------------- */
 .u-btn-asobu {
-    background-color: #eac5c5;
+    background-color: #d64c4b;
+    color: #fff
 }
 .u-btn-facebook {
-    background-color: #6d8dad;
+    background-color: #23425c;
     position: absolute;
     top : 20px;
     right: -20px;
@@ -176,7 +177,7 @@ section.entrance h3 {
     font-weight: normal;
 }
 section.entrance .btn {
-    color : #3F5063;
+    color : #405062;
     padding: 10px 50px;
 }
 @media (max-width: 767px) {
