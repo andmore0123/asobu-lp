@@ -132,7 +132,8 @@ a:hover {
 /* -------------------------------------------------------------------------- */
 .u-btn-asobu {
     background-color: #d64c4b;
-    color: #fff
+    color: #fff;
+    margin: 10px 0;
 }
 .u-btn-facebook {
     background-color: #23425c;
@@ -140,6 +141,14 @@ a:hover {
     top : 20px;
     right: -20px;
     z-index: 1;
+}
+.float {
+    background-color: #eff3f4;
+    position: fixed;
+    bottom: 0px;
+    z-index: 1000;
+    white-space: nowrap;
+    display: none;
 }
 
 /* -------------------------------------------------------------------------- */
