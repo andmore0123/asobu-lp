@@ -20,6 +20,8 @@ section.question
 @media (max-width: 767px) {
     section.top .screen {
         overflow:hidden;
+        flex: 0 0 100%;
+        max-width: 100%;
     }
     section.top .screen div{
         width:500px;
