@@ -129,13 +129,16 @@ a:hover {
 /* -------------------------------------------------------------------------- */
 /* 共通レイアウト：ボタン */
 /* -------------------------------------------------------------------------- */
-.u-btn-asobu {
+.u-btn-asobu,
+.u-btn-asobu:hover {
     background-color: #d64c4b;
     color: #fff;
     margin: 10px 0;
 }
-.u-btn-facebook {
+.u-btn-facebook,
+.u-btn-facebook:hover {
     background-color: #23425c;
+    border-color: #23425c;
     position: absolute;
     top : 20px;
     right: -20px;
